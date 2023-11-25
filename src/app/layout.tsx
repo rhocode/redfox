@@ -5,6 +5,8 @@ import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
 
+import { ChakraProvider } from "@chakra-ui/react";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -24,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
-        <TRPCReactProvider cookies={cookies().toString()}>
-          {children}
-        </TRPCReactProvider>
+        <ChakraProvider>
+          <TRPCReactProvider cookies={cookies().toString()}>
+            {children}
+          </TRPCReactProvider>
+        </ChakraProvider>
       </body>
     </html>
   );
