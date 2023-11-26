@@ -9,6 +9,9 @@
 !.yarn/sdks
 !.yarn/versions
 
+# storybook
+/storybook-static
+
 # dependencies
 /node_modules
 /.pnp
