@@ -3,10 +3,7 @@ const config = {
   plugins: [
     "prettier-plugin-organize-imports",
     "prettier-plugin-tailwindcss",
-  ],
-  importOrder: ["^components/(.*)$", "^[./]"],
-  importOrderSeparation: true,
-  importOrderSortSpecifiers: true,
+  ]
 };
 
 export default config;
