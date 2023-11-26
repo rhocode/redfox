@@ -1,5 +1,8 @@
 restylers:
   - prettier:
       image: tehalexf/prettier-restyler:v1
+      include:
+        - "**/*.ts"
+        - "**/*.tsx"
       command: [prettier, --write]
   - "*"
