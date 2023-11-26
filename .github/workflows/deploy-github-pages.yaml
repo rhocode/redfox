@@ -28,6 +28,7 @@ jobs:
       
       # Sets up yarn
       - run: yarn set version stable
+      - run: yarn config set -H enableImmutableInstalls false
 
       #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.1
