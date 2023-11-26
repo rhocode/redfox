@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+yarn link tailwindcss
+yarn link prettier-plugin-organize-imports
+yarn link prettier-plugin-tailwindcss
+trap 'yarn unlink tailwindcss' EXIT
+trap 'yarn unlink prettier-plugin-organize-imports' EXIT
+trap 'yarn unlink prettier-plugin-tailwindcss' EXIT
+prettier "$@"
