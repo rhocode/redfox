@@ -75,8 +75,6 @@
     "initVersion": "7.24.0"
   },
   "resolutions": {
-    "string-width": "^4",
-    "jackspeak": "^2",
-    "strip-ansi": "^6"
+    "jackspeak": "^2"
   }
 }
