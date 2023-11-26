@@ -1,0 +1,4 @@
+restylers:
+  - prettier:
+      image: tehalexf/prettier-restyler:v1
+  - "*"
