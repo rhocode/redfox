@@ -10,14 +10,17 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 
-interface ScheduleAccordionProps {}
+interface ScheduleAccordionProps {
+  /**
+   * The day this represents. WIP.
+   */
+  day?: string;
+}
 
 /**
  * Primary UI component for showing a schedule.
  */
-export default function ScheduleAccordion({
-  ...props
-}: ScheduleAccordionProps) {
+export default function ScheduleAccordion({ day }: ScheduleAccordionProps) {
   return (
     <Flex>
       <Accordion allowMultiple>
@@ -27,7 +30,7 @@ export default function ScheduleAccordion({
             <Flex direction="column">
               {/* TODO: Date should be here */}
               <Heading as="h2" size="md">
-                Friday, February 9th
+                {day ?? "Friday, February 9th"}
               </Heading>
               <Box
                 as="span"
