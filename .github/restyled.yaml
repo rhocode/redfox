@@ -4,5 +4,7 @@ restylers:
       include:
         - "**/*.ts"
         - "**/*.tsx"
+        - "**/*.js"
+        - "**/*.jsx"
       command: [prettier, --write]
   - "*"
