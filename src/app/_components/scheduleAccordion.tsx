@@ -10,7 +10,14 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 
-export default function ScheduleAccordion() {
+interface ScheduleAccordionProps {}
+
+/**
+ * Primary UI component for showing a schedule.
+ */
+export default function ScheduleAccordion({
+  ...props
+}: ScheduleAccordionProps) {
   return (
     <Flex>
       <Accordion allowMultiple>
