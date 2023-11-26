@@ -30,6 +30,13 @@ jobs:
       - run: yarn set version stable
       - run: yarn config set -H enableImmutableInstalls false
 
+      - run: |
+        touch .env
+        echo DATABASE_URL=${{ secrets.DATABASE_URL }} >> .env
+        echo NEXTAUTH_SECRET=${{ secrets.NEXTAUTH_SECRET }} >> .env
+        echo DISCORD_CLIENT_ID=${{ secrets.DISCORD_CLIENT_ID }} >> .env
+        echo DISCORD_CLIENT_SECRET=${{ secrets.DISCORD_CLIENT_SECRET }} >> .env
+
       #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.1
         with:
