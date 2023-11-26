@@ -1,4 +1,5 @@
 restylers:
   - prettier:
       image: tehalexf/prettier-restyler:v1
+      command: [prettier, --write]
   - "*"
