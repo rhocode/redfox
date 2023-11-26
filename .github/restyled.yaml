@@ -6,6 +6,5 @@ restylers:
         - "**/*.tsx"
         - "**/*.js"
         - "**/*.jsx"
-        - "!/tailwind.config.ts"
-      command: [prettier, --write]
+      command: [prettier, --plugin=prettier-plugin-organize-imports, --plugin=prettier-plugin-tailwindcss, --write]
   - "*"
