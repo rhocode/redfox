@@ -31,7 +31,7 @@ jobs:
       - run: yarn config set -H enableImmutableInstalls false
 
       - run: touch .env
-      - run: echo DATABASE_URL="123" >> .env
+      - run: echo DATABASE_URL="file:./db.sqlite" >> .env
       - run: echo NEXTAUTH_SECRET="123" >> .env
       - run: echo DISCORD_CLIENT_ID="123" >> .env
       - run: echo DISCORD_CLIENT_SECRET="123" >> .env
