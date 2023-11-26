@@ -1,6 +1,6 @@
 restylers:
   - prettier:
-      image: tehalexf/prettier-restyler:v6
+      image: tehalexf/prettier-restyler:v7
       include:
         - "**/*.ts"
         - "**/*.tsx"

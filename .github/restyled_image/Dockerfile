@@ -5,6 +5,7 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY package.json .
 RUN yarn install && yarn cache clean
+RUN cd node_modules/typescript && yarn link
 RUN cd node_modules/tailwindcss && yarn link
 RUN cd node_modules/prettier-plugin-organize-imports && yarn link
 RUN cd node_modules/prettier-plugin-tailwindcss && yarn link
