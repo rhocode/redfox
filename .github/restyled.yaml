@@ -1,8 +1,10 @@
 restylers:
   - prettier:
+      image: tehalexf/prettier-restyler:v5
       include:
         - "**/*.ts"
         - "**/*.tsx"
         - "**/*.js"
         - "**/*.jsx"
+      command: [prettier-with-tailwindcss, --plugin=prettier-plugin-organize-imports, --plugin=prettier-plugin-tailwindcss, --write]
   - "*"
