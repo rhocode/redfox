@@ -8,5 +8,5 @@ restylers:
         - "**/*.jsx"
       command: [prettier-with-tailwindcss, --plugin=prettier-plugin-organize-imports, --plugin=prettier-plugin-tailwindcss, --write]
   - prettier-json:
-      command: [prettier-with-tailwindcss, --no-config, -write]
+      command: [prettier-with-tailwindcss, --no-config, --write]
   - "*"
