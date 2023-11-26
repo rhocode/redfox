@@ -6,5 +6,7 @@ restylers:
         - "**/*.tsx"
         - "**/*.js"
         - "**/*.jsx"
+      exclude:
+        - "src/app/layout.tsx"
       command: [prettier, --write]
   - "*"
