@@ -74,5 +74,9 @@
   "ct3aMetadata": {
     "initVersion": "7.24.0"
   },
-  "packageManager": "yarn@4.0.2"
+  "resolutions": {
+    "string-width": "^4",
+    "jackspeak": "^2",
+    "strip-ansi": "^6"
+  }
 }
