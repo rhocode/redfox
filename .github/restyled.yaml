@@ -1,3 +1,4 @@
+auto: true
 restylers:
   - prettier:
       image: tehalexf/prettier-restyler:v7
