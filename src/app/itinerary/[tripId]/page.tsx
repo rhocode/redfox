@@ -1,4 +1,4 @@
-import ScheduleAccordion from "../../_components/scheduleAccordion";
+import ScheduleAccordion from "~/app/_components/ScheduleAccordion";
 
 export default async function ItineraryPage({
   params,

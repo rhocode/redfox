@@ -10,7 +10,9 @@
     "dev": "next dev",
     "postinstall": "prisma generate",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
@@ -25,8 +27,8 @@
     "@trpc/next": "^10.43.6",
     "@trpc/react-query": "^10.43.6",
     "@trpc/server": "^10.43.6",
-    "framer-motion": "^10.16.5",
     "eslint-config-google": "^0.14.0",
+    "framer-motion": "^10.16.5",
     "next": "^14.0.3",
     "next-auth": "^4.24.5",
     "react": "18.2.0",
@@ -36,7 +38,20 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@chakra-ui/storybook-addon": "^5.1.0",
     "@next/eslint-plugin-next": "^14.0.3",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/components": "^7.5.3",
+    "@storybook/manager-api": "^7.5.3",
+    "@storybook/nextjs": "^7.5.3",
+    "@storybook/preview-api": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
+    "@storybook/types": "^7.5.3",
     "@types/eslint": "^8.44.7",
     "@types/node": "^18.17.0",
     "@types/react": "^18.2.37",
@@ -46,16 +61,22 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "postcss": "^8.4.31",
     "prettier": "^3.1.0",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-tailwindcss": "^0.5.7",
     "prisma": "^5.6.0",
+    "storybook": "^7.5.3",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.1.6"
   },
   "ct3aMetadata": {
     "initVersion": "7.24.0"
   },
-  "packageManager": "yarn@1.22.15"
+  "resolutions": {
+    "string-width": "^4",
+    "jackspeak": "^2",
+    "strip-ansi": "^6"
+  }
 }
