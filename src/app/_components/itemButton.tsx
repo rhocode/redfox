@@ -1,7 +1,11 @@
 import { Box, Button, Flex, Icon } from "@chakra-ui/react";
 
+interface CircleIconProps {
+  boxSize: number;
+}
+
 // This is just a placeholder
-const CircleIcon = (props) => (
+const CircleIcon = (props: CircleIconProps) => (
   <Icon viewBox="0 0 200 200" {...props}>
     <path
       fill="currentColor"
@@ -29,9 +33,7 @@ export default async function ItemButton() {
           borderRadius="8px"
           justifyContent="flex-start"
           fontWeight="normal"
-        >
-          Button
-        </Button>
+        ></Button>
         <Box
           position="absolute"
           left="10px"
